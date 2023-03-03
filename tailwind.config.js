@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
+        bunzz: ['Roboto Mono', ...fontFamily.sans],
       },
       colors: {
         primary: {
@@ -24,6 +25,7 @@ module.exports = {
           900: 'rgb(var(--tw-color-primary-900) / <alpha-value>)',
         },
         dark: '#222222',
+        button: '#1876D0',
       },
       keyframes: {
         flicker: {
