@@ -4,6 +4,8 @@
   <p>Next.js + Tailwind CSS + TypeScript packed with useful development features.</p>
 </div>
 
+[Demo](https://bunzz-fizz-buzz-ui.vercel.app)
+
 ## Features
 
 This repository is 🔋 battery packed with:
