@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 import Layout from '@/components/layout/Layout';
 import UnderlineLink from '@/components/links/UnderlineLink';
@@ -6,9 +7,11 @@ import Seo from '@/components/Seo';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
+type FizzBuzzT = 'Fizz' | 'Buzz' | 'FizzBuzz' | '';
+
 export default function HomePage() {
-  const [count, setCount] = useState(0);
-  const [fizzbuzz, setFizzbuzz] = useState('');
+  const [count, setCount] = useState<number>(0);
+  const [fizzbuzz, setFizzbuzz] = useState<FizzBuzzT>('');
 
   const handleCounter = async () => {
     setCount(count + 1);
@@ -24,7 +27,7 @@ export default function HomePage() {
         setFizzbuzz(data.message);
       }
     } catch (error) {
-      console.error(error);
+      toast.error('Something went wrong');
     }
   };
 
