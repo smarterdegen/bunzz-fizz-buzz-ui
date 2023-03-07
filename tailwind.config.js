@@ -26,6 +26,7 @@ module.exports = {
         },
         dark: '#222222',
         button: '#1876D0',
+        disabled: '#1a65ad',
       },
       keyframes: {
         flicker: {
