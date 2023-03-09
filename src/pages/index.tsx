@@ -20,10 +20,10 @@ export default function HomePage() {
 
     try {
       setIsFetching(true);
-      const res = await fetch(`${API_URL}/fizzbuzz/fizzbuzz`, {
-        method: 'POST',
-        body: JSON.stringify({ count: count + 1 }),
-      });
+
+      const res = await fetch(
+        `${API_URL}/fizzbuzz/messages?count=${count + 1}`
+      );
 
       const data = await res.json();
       if (res.status === 200) {
